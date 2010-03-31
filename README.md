@@ -3,8 +3,6 @@ Dice
 A small clojure library which implements a human friendly dice rolling 
 mechanic.
 
-- - -
-
 Installing
 ==========
 Put this repo in a directory calld "game_utils" somewhere in your classpath.
