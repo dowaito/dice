@@ -11,8 +11,7 @@ Example
 =======
 From the repl:
 
-     (add-classpath "file:///path.to.game_utils")
-     (use 'game-utils.dice)
+     (use 'dice)
      (roll :3d6)
      (roll :1d20)
      (roll :4df) # understands fudge dice

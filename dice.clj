@@ -1,4 +1,4 @@
-(ns game-utils.dice)
+(ns dice)
 
 (defn roll-dice
   "Roll x number of y sided dice"
@@ -28,7 +28,10 @@
 (defn fudge-dice?
   "Are the requested dice Fudge dice?"
   [dice]
-  (if (= "f" dice) true false))
+  (if (= "f" (try (.toLowerCase dice)
+                  (catch IllegalArgumentException e
+                    "")))
+    true false))
 
 (defn roll 
   "Roll friendly dice from keyword mask"
